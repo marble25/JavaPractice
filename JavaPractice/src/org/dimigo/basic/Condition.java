@@ -12,38 +12,17 @@ public class Condition {
 		{
 		case "고속버스":
 			pay=850;
-			if(distance>10 && distance <=20)
-			{
-				pay+=300;
-			}
-			else if(distance>20 && distance<=30)
-			{
-				pay+=600;
-			}
+			pay+=300*((distance-1)/10);
 			break;
 		case "경차":
 			pay=300;
-			if(distance>10 && distance <=20)
-			{
-				pay+=200;
-			}
-			else if(distance>20 && distance<=30)
-			{
-				pay+=400;
-			}
+			pay+=200*((distance-1)/10);
 			break;
 		case "그 외":
 			pay=600;
-			if(distance>10 && distance <=20)
-			{
-				pay+=200;
-			}
-			else if(distance>20 && distance<=30)
-			{
-				pay+=400;
-			}
+			pay+=200*((distance-1)/10);
 			break;
 		}
-		System.out.println("통행료 : "+pay);
+		System.out.println("통행료 : "+pay+"원");
 	}
 }
