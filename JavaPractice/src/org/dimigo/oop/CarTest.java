@@ -16,9 +16,9 @@ package org.dimigo.oop;
  */
 public class CarTest {
 	public static void main(String[] args) {
-		Car car[]={new Car(), new Car(), new Car()};
+		Car2 car[]={new Car2("현대자동차", "제네시스", "검정색", 225, 50000000), new Car2("기아자동차", "K7", "흰색", 246, 4000000), new Car2("삼성자동차", "SM7", "회색", 200, 38000000)};
 		
-		car[0].setCompany("현대자동차");
+		/*car[0].setCompany("현대자동차");
 		car[0].setColor("검정색");
 		car[0].setMaxSpeed(225);
 		car[0].setPrice(50000000);
@@ -34,7 +34,7 @@ public class CarTest {
 		car[2].setColor("회색");
 		car[2].setMaxSpeed(200);
 		car[2].setPrice(38000000);
-		car[2].setModel("SM7");
+		car[2].setModel("SM7");*/
 		
 		System.out.println("<< 자동차 목록 >>");
 		for(int i=0;i<car.length;i++){
