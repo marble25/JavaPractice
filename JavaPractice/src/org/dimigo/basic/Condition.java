@@ -2,7 +2,7 @@ package org.dimigo.basic;
 
 public class Condition {
 	public static void main(String[] args) {
-		int distance = 10;
+		int distance = 0;
 		String car = "고속버스";
 		int pay=0;
 		System.out.println("<< 고속도로 통행료 계산 >>");
